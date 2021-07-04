@@ -66,6 +66,10 @@ article{
     width: 75%;
 }
 
+.columns{
+    display: flex;
+}
+
 @media only screen and (min-width: 768px){
 
     main{
@@ -74,4 +78,47 @@ article{
     aside{
         margin-left: 2%;
     }
+
+    .columns-desktop{
+        display: flex;
+    }
+}
+
+/*For "about me" section*/
+
+.travel{
+    width: 500px;
+    padding: 5px;
+    margin: 10px;
+    background-color: #fff;
+    border: solid 1px #cccc;
+}
+
+.travel img{
+    width: 100%;
+}
+
+.travel .title{
+    font-weight: bold;
+}
+
+.travel .columns{
+    width: 100%;
+}
+
+.travel .details{
+    text-align: right;
+}
+
+.travel .columns div{
+    width: 50%;
+}
+
+.travel button{
+    background-color: pink;
+    padding: 10px;
+    font-weight: bold;
+    border: solid 1px pink;
+    border-radius: 10px;
+    color: green;
 }
