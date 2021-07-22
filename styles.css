@@ -31,13 +31,37 @@ p{
 }
 
 header{
-    display: inline;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     background-color: lightskyblue;
-    padding: 10px;
+}
+
+header img{
+    float: left;
+    height: 150px;
+    padding-right: 20px;
+}
+
+header h1{
+    margin: 0;
+    color: black;
+    font-weight: 300;
+    font-style: normal;
+    padding: 1rem 0 0 0;
+}
+
+ul>li{
+    list-style-type: none;
+}
+
+nav{
+    background-color: #23cfa7;
+}
+
+nav a{
+    display: inline-block;
+    padding: 0.8rem 0;
+    columns: #eee;
+    text-align: center;
+    text-decoration: none;
 }
 
 nav a:visited, nav a:link{
@@ -52,15 +76,18 @@ nav a:hover{
     background-color: chartreuse;
 }
 
+nav ul.open{display: block;}
+
 nav>ul{
-    display: inline;
+    display: none;
     padding: 0;
+    margin: 0;
 }
 
 nav>ul>li{
     display: inline-block;
-    list-style: none;
     margin: 0 10px 0 10px;
+    list-style-type: none;
 }
 
 main{
@@ -135,6 +162,15 @@ tr:nth-of-type(odd){
     background-color: rgb(173, 223, 255);
 }
 
+button#button1{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 0 30px 0 2vw;
+}
+
 /*For "about me" section*/
 
 .travel{
@@ -189,6 +225,10 @@ tr:nth-of-type(odd){
     }
     
     .medium-6{width: 50%;}
+
+    nav button{display: none;}
+    nav ul{display: block;}
+    nav li{width: 25%; float: left};
 }
 
 @media only screen and (min-width: 1024px){
@@ -197,4 +237,8 @@ tr:nth-of-type(odd){
     }
 
     .large-3{width: 25%;}
+
+    nav ul{display: block;}
+    nav li{width: auto;}
+    nav a{padding: 0 20px 0 20px;}
 }
