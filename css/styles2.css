@@ -1,0 +1,53 @@
+html, body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    display: grid;
+    grid: auto-flow min-content / repeat(12, 1fr);
+    grid-gap: 1em;
+}
+header, footer{
+    display: grid;
+    grid: auto-flow min-content / repeat(12, 1fr);
+}
+header li{
+    background-color: aquamarine;
+}
+header div{
+    grid-column: 1 / -1; background-color: lightblue; box-shadow: 0px 3px 15px;
+}
+footer{background-color: lightcyan;}
+a:hover{
+    color: aquamarine;
+    background: white;
+    font-size: 16px;
+    transition-duration: 1s;
+}
+img{
+    width: 100%;
+    animation: 2s spin 1s;
+}
+li{list-style-type: none;}
+@keyframes spin{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);scale: 0.5;}
+}
+@media screen and (min-width: 0px) {
+    .leftsec{grid-column: 3 / -3;}
+    .rightsec{grid-column: 3 / -3;}
+    header li{grid-column: span 12;}
+    footer section{grid-column: span 12;}
+}
+@media screen and (min-width: 600px) {
+    .leftsec{grid-column: 3 / -3;}
+    .rightsec{grid-column: 3 / -3;}
+    header li{grid-column: span 6;}
+    footer section{grid-column: span 6;}
+}
+@media screen and (min-width: 1440px) {
+    .leftsec{grid-column: 3 / 7;}
+    .rightsec{grid-column: 7 / -3;}
+    header li{grid-column: span 3;}
+    footer section{grid-column: span 3;}
+}
