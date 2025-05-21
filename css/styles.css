@@ -32,6 +32,8 @@ p{
 
 header{
     background-color: lightskyblue;
+    /* position: fixed; */
+    width: 100%;
 }
 
 header img{
@@ -54,6 +56,11 @@ ul>li{
 
 nav{
     background-color: #23cfa7;
+    display: flex;
+}
+
+nav > ul > li {
+    flex: 1;
 }
 
 nav a{
@@ -76,24 +83,14 @@ nav a:hover{
     background-color: chartreuse;
 }
 
-nav ul.open{display: block;}
-
-nav>ul{
-    display: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav>ul>li{
-    display: inline-block;
-    margin: 0 10px 0 10px;
-    list-style-type: none;
+.coverphoto {
+    width: vmax;
 }
 
 main{
     display: flex;
     background-image: url("images/background.png");
-    padding-top: 3em;
+    padding-top: 10em;
     padding-bottom: 3em;
     min-height: 85%;
 }
@@ -210,7 +207,7 @@ button#button1{
     border-radius: 10px;
     color: green;
 }
-
+/* 
 @media only screen and (min-width: 0px){
     .columns-desktop{
         display: flex;
@@ -241,4 +238,4 @@ button#button1{
     nav ul{display: block;}
     nav li{width: auto;}
     nav a{padding: 0 20px 0 20px;}
-}
+} */
