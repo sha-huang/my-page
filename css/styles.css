@@ -1,6 +1,8 @@
 body {
     height: 100%;
     font-family: Verdana, Arial, Helvetica, sans-serif;
+    /* font-family: "Drive"; */
+    /* src: url("fonts/DriveVariable.ttf"); */
     background-color: lightgoldenrodyellow;
 }
 
@@ -35,7 +37,7 @@ h6 {
 }
 
 .statement {
-    font-size: 5em;
+    font-size: 5vw;
     text-align: center;
     color:aqua;
 }
@@ -44,6 +46,7 @@ h6 {
     display: grid;
     text-align: center;
     font-size: 3em;
+    color:azure;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 5em 5em 5em;
     column-gap: 10px;
