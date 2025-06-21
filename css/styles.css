@@ -3,7 +3,11 @@ body {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     /* font-family: "Drive"; */
     /* src: url("fonts/DriveVariable.ttf"); */
-    background-color: lightgoldenrodyellow;
+    background: radial-gradient(
+        at calc(var(--mouse-x, 0.5) * 100%)
+        calc(var(--mouse-y, 0.5) * 100%),
+        transparent, yellow
+    );
 }
 
 header {
@@ -47,15 +51,15 @@ h6 {
     text-align: center;
     font-size: 3em;
     color:azure;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 5em 5em 5em;
     column-gap: 10px;
     row-gap: 10px;
 }
 
-#dsa { grid-area: 1/1/1/3; background-color: green; }
-#theory { grid-area: 1/3/3/3; background-color: blueviolet; }
-#ai { grid-area: 2/1/3/2; background-color: aquamarine; }
+#dsa { grid-area: 1/2/1/4; background-color: green; }
+#theory { grid-area: 1/4/3/4; background-color: blueviolet; }
+#ai { grid-area: 2/2/3/3; background-color: aquamarine; }
 
 #coverphoto {
     width: 100vw;
