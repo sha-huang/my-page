@@ -19,7 +19,7 @@ header {
 
 nav, nav ul {
     display: contents;
-    font-size: 2vw;
+    font-size: 1em;
     margin-left: auto;
     flex: 1;
 }
@@ -51,15 +51,15 @@ h6 {
     text-align: center;
     font-size: 3em;
     color:azure;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(9, 10vw);
     grid-template-rows: 5em 5em 5em;
     column-gap: 10px;
     row-gap: 10px;
 }
 
-#dsa { grid-area: 1/2/1/4; background-color: green; }
-#theory { grid-area: 1/4/3/4; background-color: blueviolet; }
-#ai { grid-area: 2/2/3/3; background-color: aquamarine; }
+#dsa { grid-area: 1/2/1/5; background-color: green; border-radius: 1em; }
+#theory { grid-area: 1/5/3/7; background-color: blueviolet; border-radius: 1em; }
+#ai { grid-area: 2/4/10/5; background-color: aquamarine; border-radius: 1em; writing-mode: vertical-rl; text-orientation: mixed; }
 
 #coverphoto {
     width: 100vw;
