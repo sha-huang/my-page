@@ -1,5 +1,5 @@
-# my-page
+:desktop_computer: This repo is for the practice of web frontend development.
 
-This repo is for the practice of webpage design.
+:wave: My personal website is deployed at [sha-huang.github.io](https://sha-huang.github.io).
 
-The link is [link](https://sha-huang.github.io/my-page)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
