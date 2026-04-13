@@ -23,17 +23,20 @@ nav {
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0;
     list-style: none;
-    overflow: auto;
 }
 
 nav li {
     flex: 1;
-    padding: 5px 0rem;
+    padding: 5px 0px;
     text-align: center;
 }
 
-nav a {
+nav li a {
+    display: block;
     color: white;
     text-decoration: none;
 }
@@ -100,10 +103,18 @@ footer div {
     align-items: center;
     font-size: 1.5rem;
     margin: 0.5rem;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
 }
 
 footer div a {
     display: flex;
     padding: 0rem 2rem;
+}
+
+a svg {
+    display: block;
+}
+
+a:hover svg {
+    color: purple;
 }
