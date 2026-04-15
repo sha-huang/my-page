@@ -76,20 +76,20 @@ section:hover {
     }
 }
 
-section > h2 {
+h1, h2, h3 {
     width: 100%;
+    padding: 10px 0 0 0;
     text-align: center;
 }
 
 article {
     flex: 1;
     margin: 1rem;
-    padding: 1rem;
-    text-align: center;
+    padding: 2rem;
 }
 
-img {
-    margin: 1px 5px;
+article > img {
+    margin: 8px 8px 15px 8px;
 }
 
 footer {
