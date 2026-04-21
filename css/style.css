@@ -92,6 +92,20 @@ article svg {
     margin: 8px 8px 15px 8px;
 }
 
+article .button {
+    margin: 30px 100px;
+    padding: 10px 10px;
+    border-radius: 3px;
+    color: white;
+    background-color: #007bff;
+    text-align: center;
+    text-decoration: none;
+}
+
+article .button:hover {
+    background-color: rebeccapurple;
+}
+
 footer {
     display: flex;
     background-color: #a7ffeb;
