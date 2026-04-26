@@ -31,12 +31,12 @@ nav ul {
 
 nav li {
     flex: 1;
-    padding: 5px 0px;
     text-align: center;
 }
 
 nav li a {
     display: block;
+    padding: 1rem 0rem;
     color: white;
     text-decoration: none;
 }
@@ -72,7 +72,7 @@ section:hover {
 
 h1, h2, h3 {
     width: 100%;
-    padding: 10px 0 0 0;
+    padding: 1rem 0 0 0;
     text-align: center;
 }
 
@@ -83,7 +83,11 @@ article {
 }
 
 article svg {
-    margin: 8px 8px 15px 8px;
+    margin: 8px 8px 10px 8px;
+}
+
+article img {
+    border-radius: 2rem;
 }
 
 .button {
