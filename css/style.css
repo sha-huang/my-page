@@ -85,7 +85,12 @@ article {
 }
 
 article svg {
-    margin: 8px 8px 10px 8px;
+    margin: 10px 8px 10px 8px;
+}
+
+article svg:hover {
+    margin: 5px 8px 15px 8px;
+    transition: 0.3s;
 }
 
 article img {
@@ -122,12 +127,17 @@ footer div {
 
 footer div a {
     display: flex;
-    padding: 0rem 2rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
 }
 
-a svg {
-    display: block;
+footer div a:hover {
+    padding: 0.2rem 2rem 0.8rem 2rem;
+    transition: 0.3s;
 }
+
+/* a svg {
+    display: block;
+} */
 
 @media (max-width: 1100px) {
     section, footer {
