@@ -78,7 +78,7 @@ section:hover {
 
 h1, h2, h3 {
     width: 100%;
-    padding: 1rem 0 0 0;
+    padding: 2rem 0;
     text-align: center;
 }
 
@@ -131,7 +131,7 @@ footer div {
 
 footer div a {
     display: flex;
-    padding: 0.5rem 2rem 0.5rem 2rem;
+    padding: 0.5rem 2rem;
 }
 
 footer div a:hover {
@@ -157,6 +157,7 @@ footer div a:hover {
     }
 
     article {
-        padding: 1rem;
+        margin: 1rem 0rem;
+        padding: 1rem 0.5rem;
     }
 }
