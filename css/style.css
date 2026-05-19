@@ -125,18 +125,17 @@ footer {
 footer div {
     flex: 1;
     display: flex;
-    align-items: center;
-    margin: 0.5rem;
-    padding: 1rem 3rem;
+    /* align-items: center; */
+    padding: 1rem 5rem;
 }
 
 footer div a {
     display: flex;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 3rem 0.5rem 0rem;
 }
 
 footer div a:hover {
-    padding: 0.2rem 2rem 0.8rem 2rem;
+    padding: 0.2rem 3rem 0.8rem 0rem;
     transition: 0.3s;
 }
 
@@ -160,5 +159,9 @@ footer div a:hover {
     article {
         margin: 1rem 0rem;
         padding: 1rem 0.5rem;
+    }
+
+    footer div {
+        padding: 1rem 2.5rem;
     }
 }
