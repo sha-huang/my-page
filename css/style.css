@@ -21,6 +21,7 @@ body {
 
 nav {
     background-color: lightblue;
+    border-bottom: solid gold 2px;
 }
 
 nav ul {
@@ -58,7 +59,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 0.5rem;
+    margin: 0.6rem;
     padding: 2rem;
     border-radius: 0.6rem;
 }
@@ -73,7 +74,7 @@ section:nth-of-type(2n+3) {
 
 section:hover {
     transition: 0.7s;
-    box-shadow: 0 0 30px lightseagreen;
+    box-shadow: 0 0 0.8rem lightseagreen;
 }
 
 h1, h2, h3 {
