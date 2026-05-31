@@ -102,6 +102,37 @@ article img {
     border-radius: 2rem;
 }
 
+article table {
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 0.3rem solid rosybrown;
+    border-bottom: 0.3rem solid rosybrown;
+}
+
+caption {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-style: italic;
+    caption-side:top;
+    letter-spacing: 1px;
+}
+
+thead {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightpink;
+}
+
+td {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    vertical-align: middle;
+}
+
 .button {
     display: inline-block;
     padding: 10px 30px;
