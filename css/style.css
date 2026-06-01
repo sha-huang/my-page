@@ -104,33 +104,37 @@ article img {
 
 article table {
     table-layout: auto;
-    width: 100%;
     border-collapse: collapse;
-    border-top: 0.3rem solid rosybrown;
-    border-bottom: 0.3rem solid rosybrown;
+    /* border-top: 0.3rem solid rosybrown; */
+    /* border-bottom: 0.3rem solid rosybrown; */
 }
 
 caption {
     padding: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 2.0rem;
     font-style: italic;
-    caption-side:top;
+    caption-side: top;
     letter-spacing: 1px;
 }
 
 thead {
-    padding: 0.5rem;
-    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 1.5rem;
+    text-align: left;
 }
 
 tbody tr:nth-child(odd) {
-    background-color: lightpink;
+    background-color: lightgreen;
 }
 
-td {
-    padding: 0.5rem;
-    font-size: 0.7rem;
+th, td {
+    padding: 0.3rem 1.2rem;
+    font-size: 1.2rem;
     vertical-align: middle;
+}
+
+th:nth-child(2), td:nth-child(2), th:nth-child(5), td:nth-child(5) {
+    text-align: right;
 }
 
 .button {
@@ -190,6 +194,11 @@ footer div a:hover {
     article {
         margin: 1rem 0rem;
         padding: 1rem 0.5rem;
+    }
+
+    th, td {
+        padding: 0.3rem 0.2rem;
+        font-size: 1.0rem;
     }
 
     footer div {
