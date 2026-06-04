@@ -132,6 +132,11 @@ thead {
     background-color: lightgreen;
 } */
 
+tr:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 0.2rem 0.2rem rgb(225, 229, 6);
+}
+
 th, td {
     padding: 0.2rem 1.2rem;
     font-size: 1.2rem;
