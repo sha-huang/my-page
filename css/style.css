@@ -58,7 +58,8 @@ nav a:hover {
 section {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
+    align-items: flex-start;
     margin: 0.6rem;
     padding: 2rem;
     border-radius: 0.6rem;
@@ -160,6 +161,25 @@ th:nth-child(2), td:nth-child(2), th:nth-child(5), td:nth-child(5) {
 article .button:hover {
     background-color: purple;
     transition: 0.5s;
+}
+
+.tile {
+    display: inline-block;
+    width: 15rem;
+    height: 15rem;
+    margin: 0.3rem 0.3rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #00c8ff;
+    text-decoration: none;
+}
+
+article .tile:hover {
+    background-color: green;
+    /* box-shadow: 0 0 0.2rem 0.2rem green; */
+    transition: 0.7s;
 }
 
 footer {
