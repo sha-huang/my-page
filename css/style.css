@@ -166,8 +166,8 @@ article .button:hover {
 .tile {
     display: inline-block;
     vertical-align: top;
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 12.3rem;
     margin: 0.3rem;
     padding: 1rem;
     border-radius: 1.5rem;
