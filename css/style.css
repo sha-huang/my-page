@@ -89,8 +89,15 @@ h1, h2, h3 {
     text-align: center;
 }
 
+p {
+    width: 100%;
+}
+
 article {
     flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     margin: 1rem;
     padding: 2rem;
 }
@@ -149,25 +156,28 @@ th:nth-child(2), td:nth-child(2), th:nth-child(5), td:nth-child(5) {
 }
 
 .button {
-    display: inline-block;
-    padding: 10px 30px;
-    border-radius: 10px;
+    /* display: inline-block; */
+    width: 18rem;
+    height: 4rem;
+    margin: 1.5rem 0rem;
+    padding: 1rem;
+    border-radius: 1rem;
     color: white;
     background-color: #007bff;
     text-align: center;
     text-decoration: none;
 }
 
-article .button:hover {
+.button:hover {
     background-color: purple;
     transition: 0.5s;
 }
 
 .tile {
-    display: inline-block;
-    vertical-align: top;
-    width: 20rem;
-    height: 12.3rem;
+    /* display: inline-block; */
+    /* vertical-align: top; */
+    width: 18.2rem;
+    height: 13rem;
     margin: 0.3rem;
     padding: 1rem;
     border-radius: 1.5rem;
@@ -177,7 +187,7 @@ article .button:hover {
     text-decoration: none;
 }
 
-article .tile:hover {
+.tile:hover {
     background-color: green;
     /* box-shadow: 0 0 0.2rem 0.2rem green; */
     transition: 0.7s;
