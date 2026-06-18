@@ -89,17 +89,18 @@ h1, h2, h3 {
     text-align: center;
 }
 
-p {
-    width: 100%;
-}
-
 article {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     margin: 1rem;
     padding: 2rem;
+}
+
+article p {
+    width: 100%;
+    /* margin: 1rem 0 0 0; */
 }
 
 article svg {
@@ -159,7 +160,7 @@ th:nth-child(2), td:nth-child(2), th:nth-child(5), td:nth-child(5) {
     /* display: inline-block; */
     width: 18rem;
     height: 4rem;
-    margin: 1.5rem 0rem;
+    margin: 1.5rem 0 0 0;
     padding: 1rem;
     border-radius: 1rem;
     color: white;
