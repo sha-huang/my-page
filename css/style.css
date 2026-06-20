@@ -59,6 +59,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     /* align-items: center; */
+    /* align-items: stretch; */
     align-items: flex-start;
     margin: 0.6rem;
     padding: 2rem;
@@ -117,6 +118,8 @@ article img {
 }
 
 article table {
+    width: 100%;
+    /* box-sizing: border-box; */
     table-layout: auto;
     border-collapse: collapse;
     /* border-top: 0.3rem solid rosybrown; */
@@ -158,7 +161,7 @@ th:nth-child(2), td:nth-child(2), th:nth-child(5), td:nth-child(5) {
 
 .button {
     /* display: inline-block; */
-    width: 18rem;
+    width: 16rem;
     height: 4rem;
     margin: 1.5rem 0 0 0;
     padding: 1rem;
@@ -245,6 +248,7 @@ footer div a:hover {
     }
 
     article {
+        width: 100%;
         margin: 1rem 0rem;
         padding: 1rem 0.5rem;
     }
