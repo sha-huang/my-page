@@ -19,9 +19,16 @@ body {
     background-color: #FAFAFA;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: solid gold 2px;
+}
+
 nav {
     background-color: lightblue;
-    border-bottom: solid gold 2px;
 }
 
 nav ul {
