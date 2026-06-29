@@ -26,7 +26,7 @@ animateBackground();
 
 
 // Typewriter animation
-const words = ["Hello!", "Hi hi!", "Good day!"];
+const words = ["Hello!", "Good day!"];
 const e1 = document.getElementById("typing");
 
 let wordIdx = 0;
@@ -39,7 +39,7 @@ function animate() {
     if (!deleting) {
         // Type one character
         charIdx++;
-        e1.textContent = "[For dev] " + word.slice(0, charIdx) + " I am Sha";
+        e1.innerHTML = word.slice(0, charIdx) + "<br>I am Sha &#x1F44B;";
 
         if (charIdx === word.length) {
             deleting = true;
@@ -49,7 +49,7 @@ function animate() {
     } else {
         // Delete one character
         charIdx--;
-        e1.textContent = "[For dev] " + word.slice(0, charIdx) + " I am Sha";
+        e1.innerHTML = word.slice(0, charIdx) + "<br>I am Sha &#x1F44B;";
 
         if (charIdx === 0) {
             deleting = false;
