@@ -1,15 +1,12 @@
 function initBkgdAnimation() {
-    let hue1 = 0;
-    let hue2 = 100;
-
     // Cache the element selector once outside the animation loop
     const targetSection = document.getElementById('grad-color');
     if (!targetSection) return;
 
-    function animateBackground() {
-        // Safety check: break out if the element does not exist on the page
-        if (!targetSection) return;
+    let hue1 = 0;
+    let hue2 = 100;
 
+    function animateBackground() {
         hue1 = (hue1 + 0.3) % 360;
         hue2 = (hue2 + 0.5) % 360;
 
@@ -28,37 +25,43 @@ function initBkgdAnimation() {
 }
 
 
+// Typewriter animation
 function initTypewriter() {
-    // Typewriter animation
-    const words = ["Hello!", "Good day!"];
     const e1 = document.getElementById("typing");
     if (!e1) return;
 
+    const segmenter = new Intl.Segmenter(undefined, {
+        granularity: "grapheme"
+    });
+
+    const words = ["Apa khabar!", "Hello!", "你好！", "வணக்கம்!"];
+    const segmentedWords = words.map(word => [...segmenter.segment(word)].map(s => s.segment));
+
     let wordIdx = 0;
-    let charIdx = 0;
+    let graphemeIdx = 0;
     let deleting = false;
 
     function animate() {
-        const word = words[wordIdx];
+        const graphemes = segmentedWords[wordIdx];
 
         if (!deleting) {
             // Type one character
-            charIdx++;
-            e1.innerHTML = word.slice(0, charIdx) + "<br>I am Sha &#x1F44B;";
+            graphemeIdx++;
+            e1.innerHTML = graphemes.slice(0, graphemeIdx).join("");
 
-            if (charIdx === word.length) {
+            if (graphemeIdx === graphemes.length) {
                 deleting = true;
                 setTimeout(animate, 1000);
                 return;
             }
         } else {
             // Delete one character
-            charIdx--;
-            e1.innerHTML = word.slice(0, charIdx) + "<br>I am Sha &#x1F44B;";
+            graphemeIdx--;
+            e1.innerHTML = graphemes.slice(0, graphemeIdx).join("");
 
-            if (charIdx === 0) {
+            if (graphemeIdx === 0) {
                 deleting = false;
-                wordIdx = (wordIdx + 1) % words.length;
+                wordIdx = (wordIdx + 1) % segmentedWords.length;
             }
         }
 
@@ -70,8 +73,8 @@ function initTypewriter() {
 }
 
 
+// Header background color gradient fading effect
 function initHeaderFading() {
-    // Header background color gradient fading effect
     const header = document.querySelector("header");
     if (!header) return;
 

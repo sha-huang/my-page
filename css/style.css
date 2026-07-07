@@ -99,6 +99,15 @@ h1, h2, h3 {
     text-align: center;
 }
 
+span {
+    line-height: 3rem;
+}
+
+/* #typing {
+    display: inline-block;
+    min-width: 10rem;
+} */
+
 article {
     flex: 1;
     display: flex;
